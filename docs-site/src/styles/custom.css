@@ -1,0 +1,26 @@
+:root {
+  --sl-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --sl-color-accent-low: #302244;
+  --sl-color-accent: #ad8ce7;
+  --sl-color-accent-high: #e0d3f5;
+  --sl-color-bg: #121018;
+  --sl-color-bg-nav: #191620;
+  --sl-color-bg-sidebar: #16131d;
+  --sl-content-width: 49rem;
+}
+:root[data-theme='light'] {
+  --sl-color-accent-low: #ede6f8;
+  --sl-color-accent: #62409a;
+  --sl-color-accent-high: #3e265f;
+  --sl-color-bg: #fdfcff;
+  --sl-color-bg-nav: #f8f5fc;
+  --sl-color-bg-sidebar: #faf8fd;
+}
+.sl-markdown-content a { color: #84d9e1; }
+:root[data-theme='light'] .sl-markdown-content a { color: #12616d; }
+.site-title img { width: 1.7rem; height: 1.7rem; }
+.sl-markdown-content table { font-variant-numeric: tabular-nums; }
+.sl-markdown-content :is(th, td) { padding-block: .65rem; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+}
