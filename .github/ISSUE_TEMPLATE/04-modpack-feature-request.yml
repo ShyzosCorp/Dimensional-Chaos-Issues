@@ -1,0 +1,64 @@
+name: Modpack — Feature Request
+description: Suggest an improvement to the Dimensional Chaos – OneBlock modpack.
+title: "[Modpack Feature] "
+labels: [enhancement, needs-triage, "project:modpack"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest one improvement to the OneBlock modpack's content, configuration or player experience.
+        For features of the Dimensional Chaos custom mod itself, choose Mod — Feature Request instead.
+        Search existing requests first. This tracker is public; do not include private information or credentials.
+  - type: input
+    id: summary
+    attributes:
+      label: Feature summary
+      description: Describe the improvement in one sentence.
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Problem or limitation
+      description: What problem would this solve, or what limits the current experience?
+    validations:
+      required: true
+  - type: dropdown
+    id: gameplay-area
+    attributes:
+      label: Relevant gameplay area
+      options:
+        - Progression / balancing
+        - Quests
+        - Technology / automation
+        - Magic
+        - Exploration / dimensions
+        - Multiplayer
+        - Performance / accessibility
+        - Quality of life
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe how you would like the modpack to behave.
+    validations:
+      required: true
+  - type: textarea
+    id: player-benefit
+    attributes:
+      label: Expected player benefit
+      description: Explain who would benefit and how the change would improve their experience.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative suggestions (optional)
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context (optional)
+      description: Add examples or media if useful. Remove private information before posting.

@@ -1,0 +1,140 @@
+name: Modpack — Bug Report
+description: Report a problem with the Dimensional Chaos – OneBlock modpack.
+title: "[Modpack Bug] "
+labels: [bug, needs-triage, "project:modpack"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for OneBlock modpack crashes, mod conflicts, configuration, recipes, progression or server-pack problems.
+        For a problem isolated to the Dimensional Chaos custom mod itself, choose Mod — Bug Report instead.
+        Search existing issues first and report one problem at a time. If unsure which project is responsible, describe your setup here.
+        Everything posted here is public. Review logs, crash reports, screenshots and videos before attaching them.
+        Remove credentials, session data, personal paths, IP addresses and other sensitive information.
+        Do not upload worlds, player data or launcher account files.
+  - type: input
+    id: pack-version
+    attributes:
+      label: Modpack version
+      description: Use the full Dimensional Chaos – OneBlock release version from your launcher, not the custom mod version.
+    validations:
+      required: true
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft version
+      placeholder: "1.21.1"
+    validations:
+      required: true
+  - type: input
+    id: neoforge-version
+    attributes:
+      label: NeoForge version (if known)
+      description: Enter the full loader version from the launcher or server. Leave blank if unknown.
+      placeholder: "21.1.x"
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Singleplayer
+        - LAN
+        - Dedicated Server
+    validations:
+      required: true
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating system
+      description: OS name and version only. For a dedicated server, include client and server OS if known.
+      placeholder: Windows 11 / Ubuntu 24.04
+    validations:
+      required: true
+  - type: dropdown
+    id: installation-method
+    attributes:
+      label: Installation method
+      options:
+        - CurseForge App
+        - Manual
+        - Server installation
+        - Other (describe in reproduction steps)
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Bug category
+      options:
+        - Crash or startup failure
+        - Performance / FPS / memory
+        - Mod compatibility
+        - OneBlock progression
+        - Quests or rewards
+        - Dimensional gateways / portals
+        - Island / multiplayer / teams
+        - Interface or visual issue
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: modified-pack
+    attributes:
+      label: Has the official modpack been modified?
+      options:
+        - "No"
+        - "Yes"
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: pack-changes
+    attributes:
+      label: Changes to the official modpack (if applicable)
+      description: List manually added, removed or updated mods and versions, plus relevant configuration changes. Leave blank for an unmodified pack.
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual behavior
+      description: Describe what happened and any visible error message.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide numbered steps and relevant settings. If intermittent, explain when it occurs.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: allocated-ram
+    attributes:
+      label: Allocated RAM (for memory or performance problems)
+      description: State the launcher's maximum RAM allocation in GB; include the server allocation if relevant. Otherwise leave blank.
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Logs and crash report (if available)
+      description: Attach reviewed, redacted client or server latest.log files or paste relevant excerpts. For a crash, include its crash report if available. A crash report is not required for other problems.
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or videos (optional)
+      description: Attach useful media or a public video link after removing private information.
+  - type: checkboxes
+    id: existing-issues
+    attributes:
+      label: Existing issues
+      options:
+        - label: I searched existing open and closed issues for the same problem.
+          required: true
