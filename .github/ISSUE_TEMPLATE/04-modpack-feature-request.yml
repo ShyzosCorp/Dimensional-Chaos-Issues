@@ -1,26 +1,26 @@
 name: Modpack — Feature Request
-description: Suggest an improvement to the Dimensional Chaos – OneBlock modpack.
+description: Suggest a feature or change for the OneBlock modpack.
 title: "[Modpack Feature] "
 labels: [enhancement, needs-triage, "project:modpack"]
 body:
   - type: markdown
     attributes:
       value: |
-        Suggest one improvement to the OneBlock modpack's content, configuration or player experience.
-        For features of the Dimensional Chaos custom mod itself, choose Mod — Feature Request instead.
-        Search existing requests first. This tracker is public; do not include private information or credentials.
+        Suggest a change to OneBlock's content, settings or gameplay. Search existing requests first and keep each request to one idea.
+        For features of the custom mod itself, use Mod — Feature Request.
+        Everything here is public, so leave out private information and credentials.
   - type: input
     id: summary
     attributes:
       label: Feature summary
-      description: Describe the improvement in one sentence.
+      description: What's the idea? A sentence is enough.
     validations:
       required: true
   - type: textarea
     id: motivation
     attributes:
       label: Problem or limitation
-      description: What problem would this solve, or what limits the current experience?
+      description: What problem or limitation would this address?
     validations:
       required: true
   - type: dropdown
@@ -43,14 +43,14 @@ body:
     id: solution
     attributes:
       label: Proposed solution
-      description: Describe how you would like the modpack to behave.
+      description: How would you like it to work?
     validations:
       required: true
   - type: textarea
     id: player-benefit
     attributes:
       label: Expected player benefit
-      description: Explain who would benefit and how the change would improve their experience.
+      description: Who would this help, and how?
     validations:
       required: true
   - type: textarea
@@ -61,4 +61,4 @@ body:
     id: context
     attributes:
       label: Additional context (optional)
-      description: Add examples or media if useful. Remove private information before posting.
+      description: Add examples or media if they help. Remove private information first.
