@@ -1,22 +1,22 @@
 name: Mod — Bug Report
-description: Report a problem with the Dimensional Chaos mod for Minecraft 1.21.1 / NeoForge.
+description: Something going wrong with the Dimensional Chaos mod? Report it here.
 title: "[Bug] "
 labels: [bug, needs-triage, "project:mod"]
 body:
   - type: markdown
     attributes:
       value: |
-        Report Dimensional Chaos mod functionality here, including mod compatibility problems.
-        For companion modpack installation, packaging or pack-only configuration problems, choose Modpack — Bug Report in this tracker.
-        Search existing issues first and describe one problem per report.
-        Everything submitted here is public. Review logs, crash reports and screenshots before posting:
-        remove tokens, passwords, session data, personal file paths, IP addresses and other private information.
-        Do not upload worlds, player data or launcher account files.
+        Tell us what's going wrong with the Dimensional Chaos mod, including compatibility bugs.
+        For pack installation or settings problems, use Modpack — Bug Report.
+        Search existing issues first and keep each report to one problem.
+        Reports and attachments are public. Check logs, crash reports and screenshots before posting:
+        remove tokens, passwords, session data, personal paths, IP addresses and other private information.
+        Don't upload worlds, player data or launcher account files.
   - type: input
     id: mod-version
     attributes:
       label: Dimensional Chaos mod version
-      description: Use the mod version shown in the Mods screen, not the modpack version.
+      description: Find this in the Mods screen. Use the mod version, not the pack version.
     validations:
       required: true
   - type: input
@@ -30,7 +30,7 @@ body:
     id: neoforge-version
     attributes:
       label: NeoForge version
-      description: Provide the full version shown by your launcher or server.
+      description: Copy the full version from your launcher or server.
       placeholder: "21.1.x"
     validations:
       required: true
@@ -48,7 +48,7 @@ body:
     id: operating-system
     attributes:
       label: Operating system
-      description: OS name and version only; for a dedicated server, include client and server OS if known.
+      description: Just the OS name and version. On a dedicated server, include both client and server OS if you know them.
       placeholder: Windows 11 / Ubuntu 24.04
   - type: dropdown
     id: companion-modpack
@@ -64,7 +64,7 @@ body:
     id: modpack-version
     attributes:
       label: Companion modpack version (if applicable)
-      description: If you selected Yes, enter the pack version and mention any changes to its mod list.
+      description: If yes, add the pack version and any changes you've made to its mod list.
   - type: textarea
     id: expected-behavior
     attributes:
@@ -76,14 +76,14 @@ body:
     id: actual-behavior
     attributes:
       label: Actual behavior
-      description: What happened instead? Include any visible error message.
+      description: What happened instead? Include any error message you saw.
     validations:
       required: true
   - type: textarea
     id: reproduction
     attributes:
       label: Steps to reproduce
-      description: Provide numbered steps and relevant settings or other mod versions. If intermittent, describe when it occurs.
+      description: List the steps, settings and other mod versions needed to reproduce this. If it only happens sometimes, tell us when.
       placeholder: |
         1. ...
         2. ...
@@ -94,12 +94,12 @@ body:
     id: logs
     attributes:
       label: Relevant logs and crash reports
-      description: Attach a reviewed, redacted latest.log or crash report, or paste the relevant excerpt. For server problems, include client and server evidence if available. Logs are optional if unavailable.
+      description: Attach latest.log or a crash report, or paste the relevant part. Remove private information first. For server problems, client and server logs both help if you have them. Leave blank if no logs are available.
   - type: textarea
     id: screenshots
     attributes:
       label: Screenshots (optional)
-      description: Attach screenshots if helpful, after removing private information.
+      description: Add screenshots if they help. Remove private information first.
   - type: checkboxes
     id: existing-issues
     attributes:

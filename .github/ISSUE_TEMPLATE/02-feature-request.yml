@@ -1,33 +1,33 @@
 name: Mod — Feature Request
-description: Suggest an improvement to the Dimensional Chaos mod.
+description: Suggest a feature or change for the Dimensional Chaos mod.
 title: "[Feature] "
 labels: [enhancement, needs-triage, "project:mod"]
 body:
   - type: markdown
     attributes:
       value: |
-        Suggest one improvement to Dimensional Chaos mod functionality per request.
-        Search existing requests first. For companion modpack content or pack-only configuration requests, choose Modpack — Feature Request in this tracker.
-        This tracker is public; do not include personal information or credentials.
+        What would you like to see in the Dimensional Chaos mod? Search existing requests first and keep each request to one idea.
+        For pack content or settings, use Modpack — Feature Request.
+        Everything here is public, so leave out personal information and credentials.
   - type: input
     id: summary
     attributes:
       label: Feature summary
-      description: Describe the improvement in one sentence.
+      description: What's the idea? A sentence is enough.
     validations:
       required: true
   - type: textarea
     id: motivation
     attributes:
       label: Problem or motivation
-      description: What problem would this solve, or what experience would it improve?
+      description: What problem would this solve, or what would it make better?
     validations:
       required: true
   - type: textarea
     id: solution
     attributes:
       label: Proposed solution
-      description: Describe how you would like the mod to behave.
+      description: How would you like it to work?
     validations:
       required: true
   - type: textarea
@@ -38,4 +38,4 @@ body:
     id: context
     attributes:
       label: Additional context (optional)
-      description: Add examples or screenshots if useful. Remove private information before posting.
+      description: Add examples or screenshots if they help. Remove private information first.
