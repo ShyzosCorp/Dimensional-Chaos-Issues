@@ -1,6 +1,7 @@
 ---
 title: "Island expansion"
 description: "Expand your island through Slate quests and unlock gateway destinations in Dimensional Chaos 1.1.0 Beta."
+tableOfContents: false
 ---
 
 New OneBlock islands start with a square border at radius 16. The turquoise wall appears as you approach the edge. It is enforced by the server, not just drawn on screen.

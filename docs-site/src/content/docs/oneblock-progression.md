@@ -1,6 +1,7 @@
 ---
 title: "OneBlock progression"
 description: "The seven OneBlock phases, mined-block thresholds, tools and shared six-slot reserve in Dimensional Chaos 1.1.0 Beta."
+tableOfContents: false
 ---
 
 The OneBlock changes its resource pool as you mine. This is a mod feature; the official pack supplies the other mods used by its pools and crafting progression.

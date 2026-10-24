@@ -1,6 +1,7 @@
 ---
 title: "Getting started"
 description: "Start a OneBlock world, gather resources and prepare for your first dimensional expedition in Dimensional Chaos."
+tableOfContents: false
 ---
 
 For a new OneBlock game, choose Survival and check that the world type is **Dimensional Chaos - OneBlock (Void)**. The mod selects it by default when you first open the new-world screen, but you can change it.

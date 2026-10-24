@@ -1,6 +1,7 @@
 ---
 title: "Multiplayer"
 description: "Play Dimensional Chaos with friends: shared islands, OneBlock progress and the team-join inventory reset warning."
+tableOfContents: false
 ---
 
 Use the same pack release as the server. The modpack includes the Slate Teams integration used for shared islands; a custom installation needs that supported integration too.
