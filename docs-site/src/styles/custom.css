@@ -1,0 +1,60 @@
+:root {
+  --sl-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --sl-color-accent-low: #302244;
+  --sl-color-accent: #ad8ce7;
+  --sl-color-accent-high: #e0d3f5;
+  --sl-color-bg: #121018;
+  --sl-color-bg-nav: #191620;
+  --sl-color-bg-sidebar: #16131d;
+  --sl-content-width: 49rem;
+}
+:root[data-theme='light'] {
+  --sl-color-accent-low: #ede6f8;
+  --sl-color-accent: #62409a;
+  --sl-color-accent-high: #3e265f;
+  --sl-color-bg: #fdfcff;
+  --sl-color-bg-nav: #f8f5fc;
+  --sl-color-bg-sidebar: #faf8fd;
+}
+.sl-markdown-content a { color: #84d9e1; }
+:root[data-theme='light'] .sl-markdown-content a { color: #12616d; }
+.site-title img { width: 1.7rem; height: 1.7rem; }
+.sl-markdown-content table { font-variant-numeric: tabular-nums; }
+.sl-markdown-content :is(th, td) { padding-block: .65rem; }
+.dc-edition {
+  color: var(--sl-color-accent-high);
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .025em;
+}
+.dc-intro { font-size: 1.2rem; line-height: 1.65; max-width: 38rem; }
+.dc-start { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 1.5rem; padding-block: .5rem 1rem; }
+.dc-start .dc-start-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: .7rem 1rem;
+  border-radius: .4rem;
+  background: var(--sl-color-accent-low);
+  border: 1px solid var(--sl-color-accent);
+  color: var(--sl-color-accent-high);
+  font-weight: 600;
+  text-decoration: none;
+}
+.dc-guides { display: grid; gap: .75rem; margin-block: 1.5rem 2rem; }
+.dc-guides a {
+  display: grid;
+  gap: .25rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--sl-color-hairline-light);
+  border-inline-start: 2px solid var(--sl-color-accent);
+  border-radius: .35rem;
+  background: var(--sl-color-bg-nav);
+  text-decoration: none;
+}
+.dc-guides a span { color: var(--sl-color-text); font-size: .9rem; }
+.dc-guides a:hover { border-color: var(--sl-color-accent); }
+.dc-start a:focus-visible, .dc-guides a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+}
