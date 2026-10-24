@@ -1,0 +1,109 @@
+name: Bug report
+description: Report a problem with the Dimensional Chaos mod for Minecraft 1.21.1 / NeoForge.
+title: "[Bug] "
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report Dimensional Chaos mod functionality here, including mod compatibility problems.
+        For companion modpack installation, packaging or pack-only configuration problems, use the modpack's own support tracker.
+        Search existing issues first and describe one problem per report.
+        Everything submitted here is public. Review logs, crash reports and screenshots before posting:
+        remove tokens, passwords, session data, personal file paths, IP addresses and other private information.
+        Do not upload worlds, player data or launcher account files.
+  - type: input
+    id: mod-version
+    attributes:
+      label: Dimensional Chaos mod version
+      description: Use the mod version shown in the Mods screen, not the modpack version.
+    validations:
+      required: true
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft version
+      placeholder: "1.21.1"
+    validations:
+      required: true
+  - type: input
+    id: neoforge-version
+    attributes:
+      label: NeoForge version
+      description: Provide the full version shown by your launcher or server.
+      placeholder: "21.1.x"
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Singleplayer
+        - LAN
+        - Dedicated Server
+    validations:
+      required: true
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating system
+      description: OS name and version only; for a dedicated server, include client and server OS if known.
+      placeholder: Windows 11 / Ubuntu 24.04
+  - type: dropdown
+    id: companion-modpack
+    attributes:
+      label: Are you using the official companion modpack?
+      options:
+        - "Yes"
+        - "No"
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: modpack-version
+    attributes:
+      label: Companion modpack version (if applicable)
+      description: If you selected Yes, enter the pack version and mention any changes to its mod list.
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual behavior
+      description: What happened instead? Include any visible error message.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide numbered steps and relevant settings or other mod versions. If intermittent, describe when it occurs.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs and crash reports
+      description: Attach a reviewed, redacted latest.log or crash report, or paste the relevant excerpt. For server problems, include client and server evidence if available. Logs are optional if unavailable.
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots (optional)
+      description: Attach screenshots if helpful, after removing private information.
+  - type: checkboxes
+    id: existing-issues
+    attributes:
+      label: Existing issues
+      options:
+        - label: I searched existing open and closed issues for the same problem.
+          required: true
