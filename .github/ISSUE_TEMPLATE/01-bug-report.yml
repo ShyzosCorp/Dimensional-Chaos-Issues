@@ -1,13 +1,13 @@
-name: Bug report
+name: Mod — Bug Report
 description: Report a problem with the Dimensional Chaos mod for Minecraft 1.21.1 / NeoForge.
 title: "[Bug] "
-labels: [bug, needs-triage]
+labels: [bug, needs-triage, "project:mod"]
 body:
   - type: markdown
     attributes:
       value: |
         Report Dimensional Chaos mod functionality here, including mod compatibility problems.
-        For companion modpack installation, packaging or pack-only configuration problems, use the modpack's own support tracker.
+        For companion modpack installation, packaging or pack-only configuration problems, choose Modpack — Bug Report in this tracker.
         Search existing issues first and describe one problem per report.
         Everything submitted here is public. Review logs, crash reports and screenshots before posting:
         remove tokens, passwords, session data, personal file paths, IP addresses and other private information.

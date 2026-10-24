@@ -1,13 +1,13 @@
-name: Feature request
+name: Mod — Feature Request
 description: Suggest an improvement to the Dimensional Chaos mod.
 title: "[Feature] "
-labels: [enhancement, needs-triage]
+labels: [enhancement, needs-triage, "project:mod"]
 body:
   - type: markdown
     attributes:
       value: |
         Suggest one improvement to Dimensional Chaos mod functionality per request.
-        Search existing requests first. Companion modpack content and pack-only configuration requests belong on the modpack's own support tracker.
+        Search existing requests first. For companion modpack content or pack-only configuration requests, choose Modpack — Feature Request in this tracker.
         This tracker is public; do not include personal information or credentials.
   - type: input
     id: summary
