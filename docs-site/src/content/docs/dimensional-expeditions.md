@@ -15,6 +15,8 @@ The cycle pauses when no players are online or singleplayer is paused. Logging o
 
 The return portal closes and you become trapped. Find the Dimensional Fracture and fight the Rift Guardians around it. Each guardian drops two Dimensional Fragments. Right-click the fracture with fragments until it is ready, then step in to return home. A Rift Compass, if you have one, helps locate it; `/dc expedition` also shows your escape status.
 
-The default repair cost starts at four fragments and rises with island tier. Only Dimensional Fragments work in 1.1.0; amethyst and other materials aren't repair fuel. Guardian waves also get harder as the island grows.
+Other hostile mobs you kill during an expedition sometimes drop a fragment too.
+
+The default repair cost starts at four fragments and rises with island tier, up to six at tier 6 and above. Only Dimensional Fragments work in 1.1.0; amethyst and other materials aren't repair fuel. Guardian waves also get harder as the island grows.
 
 While trapped, ordinary teleport commands and vanilla portals can't take you home. Dying isn't a shortcut out either. If the escape process breaks, report it rather than deleting world data.
