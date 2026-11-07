@@ -184,7 +184,7 @@ const itemImages = [iGateway, iReturn, iFracture, iFragment, iCompass];
       {T.guides.map(([slug, title, text], i) => (
         <a class="dc-card" href={`./${slug}/`}>
           <Image src={guideImages[i]} alt="" widths={[400, 800]} sizes="(min-width: 72rem) 18rem, (min-width: 40rem) 45vw, 100vw" />
-          <span class="dc-card-body"><strong>{title}</strong><span>{text}</span></span>
+          <span class="dc-card-body"><strong>{title}</strong>{' '}<span>{text}</span></span>
         </a>
       ))}
     </div>
@@ -192,7 +192,7 @@ const itemImages = [iGateway, iReturn, iFracture, iFragment, iCompass];
       {T.small.map(([slug, title, text], i) => (
         <a class="dc-mini" href={`./${slug}/`}>
           <Image src={smallIcons[i]} alt="" width={56} height={56} />
-          <span><strong>{title}</strong><span>{text}</span></span>
+          <span><strong>{title}</strong>{' '}<span>{text}</span></span>
           <span class="dc-mini-arrow" aria-hidden="true">→</span>
         </a>
       ))}
@@ -209,7 +209,7 @@ const itemImages = [iGateway, iReturn, iFracture, iFragment, iCompass];
       {T.realms.map((name, i) => (
         <li class="dc-realm">
           <Image src={realmImages[i]} alt="" widths={[400, 800]} sizes="(min-width: 72rem) 18rem, (min-width: 40rem) 45vw, 100vw" />
-          <span class="dc-realm-label"><strong>{name}</strong><span class="dc-tier">{T.tier} {realmTiers[i]}</span></span>
+          <span class="dc-realm-label"><strong>{name}</strong>{' '}<span class="dc-tier">{T.tier} {realmTiers[i]}</span></span>
         </li>
       ))}
     </ul>
@@ -224,7 +224,7 @@ const itemImages = [iGateway, iReturn, iFracture, iFragment, iCompass];
       {T.items.map(([name, text], i) => (
         <li class="dc-item">
           <span class="dc-item-icon"><Image src={itemImages[i]} alt="" width={96} height={96} /></span>
-          <strong>{name}</strong>
+          <strong>{name}</strong>{' '}
           <span>{text}</span>
         </li>
       ))}
