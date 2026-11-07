@@ -1,22 +1,38 @@
 ---
 title: "Dimensional expeditions"
-description: "Understand the shared dimensional timer, return portals, Rift Guardians and fracture escape in Dimensional Chaos."
+description: "Your personal 15-minute return timer, where the gateway takes you, and how to escape through a Dimensional Fracture."
 ---
 
-Your island gateway takes you to a destination chosen from the dimensions available to your island. Extra dimensions come from other mods; the gateway doesn't install them.
+Your island's gateway takes you to another dimension for resources you can't get from the OneBlock. The dimensions themselves come from other mods; the modpack includes them.
 
-The default dimensional cycle lasts **15 minutes**. Everyone follows the current cycle: entering with two minutes left gives you two minutes to return. Leaving and going back in doesn't reset it. Watch the HUD and return through the portal you arrived beside before it reaches zero.
+## Day, night and the gateway
 
-In 1.1.0, the home gateway works during both day and night. Sleeping or changing Minecraft's time doesn't restart the dimensional cycle. The pack's separate daylight cycle lasts 20 minutes: 15 of day and 5 of night.
+A Minecraft day lasts 20 minutes in the pack: 15 minutes of day, then 5 minutes of night. The home gateway is open during the day and closes at night. Sleeping can't skip the night, and `/time set` is turned off.
 
-The cycle pauses when no players are online or singleplayer is paused. Logging out while other players remain online doesn't stop the shared deadline.
+## Your 15 minutes
+
+Each player gets **15 minutes** from the moment they step through the gateway. The time is yours: your teammates have their own. If you come home and go back to the same dimension during the same day, you continue with the time you had left. The next day starts fresh.
+
+The timer only counts while you're playing. The HUD and your Rift Compass show where your return portal is and how long you have left. You get warnings at 5 minutes, 1 minute and 10 seconds.
+
+Nightfall closes the home gateway, but players already out on an expedition aren't trapped by it: they still have their own time to get back.
+
+## Where the gateway goes
+
+Each island gets one destination per day, and never the same one twice in a row when another is available. Dimensions you unlocked recently come up more often; the early ones still come back now and then.
+
+When your current expansion chapter needs a dimension you haven't visited yet, the gateway takes you there first, at most every other day. `/dc status` lists the dimensions you still have to visit. See [Island expansion](../island-expansion/) for which dimension opens at which tier.
 
 ## If you miss the portal
 
-The return portal closes and you become trapped. Find the Dimensional Fracture and fight the Rift Guardians around it. Each guardian drops two Dimensional Fragments. Right-click the fracture with fragments until it is ready, then step in to return home. A Rift Compass, if you have one, helps locate it; `/dc expedition` also shows your escape status.
+Your return portal closes and you're trapped. The only way home is through the Dimensional Fracture, and Rift Guardians spawn around it.
 
-Other hostile mobs you kill during an expedition sometimes drop a fragment too.
+- Each guardian drops 2 Dimensional Fragments. A wave always holds enough fragments for the repair.
+- The repair needs 4 fragments at tiers 0 to 2, 5 at tiers 3 to 5 and 6 from tier 6. Right-click the fracture with your fragments, then step in.
+- Guardians get stronger, better armed and more numerous as your island grows: 3 at tier 0, up to 6 at tier 8.
+- If fragments get lost (lava, the void), a safety guardian brings 2 more once, after 3 minutes.
+- Ordinary monsters don't drop fragments.
 
-The default repair cost starts at four fragments and rises with island tier, up to six at tier 6 and above. Only Dimensional Fragments work in 1.1.0; amethyst and other materials aren't repair fuel. Guardian waves also get harder as the island grows.
+While you're trapped, teleport commands, other portals and dying won't take you home. Falling out of the Aether doesn't count either. Once used, the fracture closes into crying obsidian.
 
-While trapped, ordinary teleport commands and vanilla portals can't take you home. Dying isn't a shortcut out either. If the escape process breaks, report it rather than deleting world data.
+If the escape seems broken, report it rather than editing your world files.

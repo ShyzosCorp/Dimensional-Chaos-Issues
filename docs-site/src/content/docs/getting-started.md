@@ -1,22 +1,23 @@
 ---
 title: "Getting started"
-description: "Start a OneBlock world, gather resources and prepare for your first dimensional expedition in Dimensional Chaos."
+description: "Start a OneBlock world, gather your first resources and get ready for your first trip through the gateway."
 tableOfContents: false
 ---
 
-For a new OneBlock game, choose Survival and check that the world type is **Dimensional Chaos - OneBlock (Void)**. The mod selects it by default when you first open the new-world screen, but you can change it.
+Create a Survival world and check that the world type is **Dimensional Chaos - OneBlock (Void)**. It's selected by default the first time you open the new-world screen.
 
-Mine the regenerating OneBlock for your first resources. Make tools and a safe platform before heading towards the gateway. Use the right tool for each block: being allowed to break it doesn't always mean it will drop anything.
+Mine the OneBlock for your first resources. It comes back every time you break it. Make some tools and a safe platform before you walk to the gateway. Use the right tool for each block: some blocks break with anything but only drop with the proper tool.
 
-In the modpack, follow the Slate quest book for crafting goals and island expansion. Its 1.1.0 book has 118 quests, including eight expansion chapters. Those quests use the pack's mods and supported Slate integration; they don't all work with just the custom mod installed.
+In the modpack, the Slate quest book is your guide. It has 120 quests, including eight island expansion chapters that grow your island and open new dimensions. The quests rely on the pack's mods, so they don't all work with the mod on its own.
 
-These commands are useful while you get settled:
+A few commands that help while you settle in:
 
 | Command | What it shows |
 | --- | --- |
-| `/dc oneblock info` | Your phase, mined-block count and progress to the next phase |
-| `/dc island` | Your expansion tier and next tier |
-| `/dc border` | The border around your current island area |
+| `/dc status` | Today's destination, the dimensions your chapter still needs, and the next one your island unlocks |
+| `/dc oneblock info` | Your OneBlock phase, blocks mined and progress to the next phase |
+| `/dc island` | Your island tier and the next one |
+| `/dc border` | The border of your island |
 | `/dc expedition` | Your expedition or escape status |
 
-Check the gateway timer before entering. You get the time left in the current cycle, not a fresh 15 minutes. Read [Dimensional expeditions](../dimensional-expeditions/) before your first trip.
+The gateway is open during the day. Once you step through, you have 15 minutes to get back. Read [Dimensional expeditions](../dimensional-expeditions/) before your first trip.
