@@ -1,6 +1,6 @@
 # Documentation site
 
-Astro Starlight serves the eight guides in English, French and Simplified Chinese. Gameplay information is up to date for **1.1.2 Beta**; check a newer release before updating those claims. The original drafts remain in the owner's workspace under `reports/wiki-draft-20261024/`.
+Astro Starlight serves the eight guides in English, French and Simplified Chinese. Gameplay information is up to date for **1.1.2 Beta**; check a newer release before updating those claims.
 
 ## Local work
 
