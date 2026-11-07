@@ -1,6 +1,6 @@
 # Documentation site
 
-Astro Starlight serves the eight approved guides. Gameplay information is checked for **1.1.0 Beta**; check a newer release before updating those claims. The original drafts remain in the owner's workspace under `reports/wiki-draft-20261024/`.
+Astro Starlight serves the eight guides in English, French and Simplified Chinese. Gameplay information is up to date for **1.1.2 Beta**; check a newer release before updating those claims. The original drafts remain in the owner's workspace under `reports/wiki-draft-20261024/`.
 
 ## Local work
 
@@ -15,7 +15,7 @@ npm run preview
 
 Open the printed local URL with `/Dimensional-Chaos-Issues/` at the end. Search uses the production Pagefind index, so check it with `preview` after building. `npm run dev` is useful for writing, but isn't the search test.
 
-Guides live in `src/content/docs/`. Keep their titles and descriptions useful, and use relative links between guides so both the project path and a future custom domain work. Starlight supplies the sidebar, mobile navigation, search and sitemap. Styling is in `src/styles/custom.css`.
+Guides live in `src/content/docs/`: English at the root, French in `fr/` and Simplified Chinese in `zh-cn/`, with the same file names. Change all three when a guide changes; Starlight shows the English page when a translation is missing. Sidebar labels are translated in `astro.config.mjs`. Keep their titles and descriptions useful, and use relative links between guides so both the project path and a future custom domain work. Starlight supplies the sidebar, mobile navigation, search and sitemap. Styling is in `src/styles/custom.css`.
 
 The default public URL will be:
 
