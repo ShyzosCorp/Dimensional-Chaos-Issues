@@ -47,7 +47,7 @@
 .dc-section-head p:not(.dc-pixel) { margin: .9rem 0 0; color: var(--dc-muted); font-size: 1.04rem; line-height: 1.65; }
 
 /* Frames */
-.dc-hero2, .dc-server, .dc-stats li, .dc-card, .dc-mini, .dc-realm, .dc-item, .dc-note {
+.dc-hero2, .dc-server, .dc-stats li, .dc-card, .dc-mini, .dc-realm, .dc-item, .dc-about, .dc-note {
   border: 2px solid var(--dc-line-2);
   background: rgb(22 15 42 / 0.94);
   box-shadow: var(--dc-shadow), var(--dc-bevel);
@@ -350,7 +350,7 @@
 .dc-copy.is-done { background: #6dffa8; }
 .dc-server-links { display: flex; flex-direction: column; gap: .85rem; }
 
-.dc-about { max-width: 50rem; margin: 0; color: var(--dc-muted); font-size: 1.02rem; line-height: 1.75; }
+.dc-about { max-width: 50rem; margin: 0; padding: 1.1rem 1.35rem; border-inline-start: 4px solid var(--dc-violet); color: var(--dc-text); font-size: 1.02rem; line-height: 1.75; }
 .dc-note {
   max-width: 50rem;
   margin: calc(clamp(3rem, 7vw, 5rem) * -0.6) 0 0;
