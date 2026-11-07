@@ -18,7 +18,15 @@ export default defineConfig({
       },
       favicon: '/favicon.svg',
       logo: { src: './src/assets/mark.svg', replacesTitle: false },
-      customCss: ['./src/styles/custom.css'],
+      customCss: [
+        '@fontsource-variable/outfit/wght.css',
+        '@fontsource/pixelify-sans/500.css',
+        '@fontsource/pixelify-sans/700.css',
+        './src/styles/custom.css',
+      ],
+      components: {
+        PageTitle: './src/components/PageTitle.astro',
+      },
       social: [{ icon: 'github', label: 'GitHub Issues', href: 'https://github.com/ShyzosCorp/Dimensional-Chaos-Issues/issues' }],
       sidebar: [
         { label: 'Overview', translations: { fr: 'Présentation', 'zh-CN': '概览' }, slug: '' },

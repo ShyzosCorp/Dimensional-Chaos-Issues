@@ -1,0 +1,45 @@
+---
+// Guide pages open with a scene from the trailer behind the title.
+// The homepage (splash template) draws its own hero, so its title is kept for screen readers only.
+import { Image } from 'astro:assets';
+import gateway from '../assets/media/card-gateway.webp';
+import oneblock from '../assets/media/card-oneblock.webp';
+import expedition from '../assets/media/card-expedition.webp';
+import expansion from '../assets/media/card-expansion.webp';
+import trapped from '../assets/media/card-trapped.webp';
+import twilight from '../assets/media/realm-tf.webp';
+import aether from '../assets/media/realm-ae.webp';
+
+const route = Astro.locals.starlightRoute;
+const { title, template } = route.entry.data;
+const locale = route.locale;
+const slug = route.id.replace(/^(fr|zh-cn)(\/|$)/, '');
+
+const covers: Record<string, ImageMetadata> = {
+  installation: twilight,
+  'getting-started': gateway,
+  'oneblock-progression': oneblock,
+  'dimensional-expeditions': expedition,
+  'island-expansion': expansion,
+  multiplayer: aether,
+  troubleshooting: trapped,
+};
+const eyebrow = { fr: 'Guide du joueur', 'zh-cn': '玩家指南' }[locale ?? ''] ?? 'Player guide';
+const cover = covers[slug];
+---
+
+{template === 'splash' ? (
+  <h1 id="_top" class="dc-sr-only">{title}</h1>
+) : (
+  <div class:list={['dc-title', { 'dc-title--cover': cover }]}>
+    {cover && (
+      <div class="dc-title-cover" aria-hidden="true">
+        <Image src={cover} alt="" widths={[480, 800]} sizes="(min-width: 72rem) 50rem, 100vw" loading="eager" />
+      </div>
+    )}
+    <div class="dc-title-text">
+      <p class="dc-eyebrow"><span class="dc-eyebrow-dot" aria-hidden="true"></span>{eyebrow} · 1.1.2 Beta</p>
+      <h1 id="_top">{title}</h1>
+    </div>
+  </div>
+)}
