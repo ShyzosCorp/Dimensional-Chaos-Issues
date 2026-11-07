@@ -4,6 +4,8 @@ description: "Guides for the Dimensional Chaos mod and OneBlock modpack on Minec
 tableOfContents: false
 ---
 
+<div class="dc-hero"><img src="./media/banner-en.webp" width="1600" height="450" alt="Dimensional Chaos OneBlock: Minecraft 1.21.1, NeoForge, solo and multiplayer" fetchpriority="high"></div>
+
 <p class="dc-edition">Player guides · 1.1.2 Beta · Minecraft 1.21.1 / NeoForge</p>
 
 <p class="dc-intro">Grow your island from a single block, work through the OneBlock phases and plan your next trip through the gateway. These guides cover both the mod and the OneBlock modpack.</p>
@@ -14,9 +16,9 @@ tableOfContents: false
 </div>
 
 <div class="dc-guides">
-  <a href="./oneblock-progression/"><strong>OneBlock progression</strong><span>Resources, tools and the seven phases.</span></a>
-  <a href="./dimensional-expeditions/"><strong>Dimensional expeditions</strong><span>Your 15 minutes, and how to get home if you miss the portal.</span></a>
-  <a href="./island-expansion/"><strong>Island expansion</strong><span>Chapters, more space and new dimensions.</span></a>
+  <a href="./oneblock-progression/"><img src="./media/card-oneblock.webp" width="800" height="450" alt="" loading="lazy"><strong>OneBlock progression</strong><span>Resources, tools and the seven phases.</span></a>
+  <a href="./dimensional-expeditions/"><img src="./media/card-expedition.webp" width="800" height="450" alt="" loading="lazy"><strong>Dimensional expeditions</strong><span>Your 15 minutes, and how to get home if you miss the portal.</span></a>
+  <a href="./island-expansion/"><img src="./media/card-expansion.webp" width="800" height="450" alt="" loading="lazy"><strong>Island expansion</strong><span>Chapters, more space and new dimensions.</span></a>
 </div>
 
 The [mod](https://www.curseforge.com/minecraft/mc-mods/dimensional-chaos) brings the OneBlock, island borders, the gateway and the escape mechanics. The [OneBlock modpack](https://www.curseforge.com/minecraft/modpacks/dimensional-chaos-oneblock) adds the other mods, the quest book and the pack settings for the full survival experience.

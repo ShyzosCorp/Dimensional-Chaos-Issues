@@ -30,7 +30,7 @@ export default defineConfig({
         { label: 'Multiplayer', translations: { fr: 'Multijoueur', 'zh-CN': '多人游戏' }, slug: 'multiplayer' },
         { label: 'Troubleshooting', translations: { fr: 'Dépannage', 'zh-CN': '常见问题' }, slug: 'troubleshooting' },
       ],
-      head: [{ tag: 'meta', attrs: { name: 'theme-color', content: '#171324' } }],
+      head: [{ tag: 'meta', attrs: { name: 'theme-color', content: '#1a0b38' } }],
     }),
   ],
 });
