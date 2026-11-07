@@ -1,0 +1,270 @@
+---
+// Homepage for each language: hero, key numbers, guides, dimensions, mod items and the official server.
+import { Image } from 'astro:assets';
+import '../styles/landing.css';
+import island from '../assets/media/hero-island.webp';
+import gateway from '../assets/media/card-gateway.webp';
+import oneblock from '../assets/media/card-oneblock.webp';
+import expedition from '../assets/media/card-expedition.webp';
+import expansion from '../assets/media/card-expansion.webp';
+import rTf from '../assets/media/realm-tf.webp';
+import rAe from '../assets/media/realm-ae.webp';
+import rNether from '../assets/media/realm-nether.webp';
+import rUg from '../assets/media/realm-ug.webp';
+import rMining from '../assets/media/realm-mining.webp';
+import rEnd from '../assets/media/realm-end.webp';
+import rOther from '../assets/media/realm-other.webp';
+import rOtherside from '../assets/media/realm-otherside.webp';
+import iGateway from '../assets/media/item-gateway.webp';
+import iReturn from '../assets/media/item-return-gateway.webp';
+import iFracture from '../assets/media/item-active-fracture.webp';
+import iFragment from '../assets/media/item-fragment.webp';
+import iCompass from '../assets/media/item-compass.webp';
+
+interface Props { lang: 'en' | 'fr' | 'zh-cn' }
+const { lang } = Astro.props;
+
+const MOD = 'https://www.curseforge.com/minecraft/mc-mods/dimensional-chaos';
+const PACK = 'https://www.curseforge.com/minecraft/modpacks/dimensional-chaos-oneblock';
+const BUG = 'https://github.com/ShyzosCorp/Dimensional-Chaos-Issues/issues/new/choose';
+const SERVER = 'play-dc.shyzos.xyz';
+
+const T = {
+  en: {
+    eyebrow: 'Player guides · 1.1.2 Beta',
+    tagline: 'Grow your island from a single block, work through the OneBlock phases and plan your next trip through the gateway. These guides cover both the mod and the OneBlock modpack.',
+    meta: ['Minecraft 1.21.1', 'NeoForge', 'Solo & multiplayer'],
+    start: 'Getting started', install: 'Install it',
+    stats: [['7', 'OneBlock phases'], ['8', 'island tiers'], ['8', 'dimensions'], ['120', 'quests in the modpack']],
+    guidesEyebrow: 'Guides', guidesTitle: 'Find your way',
+    guides: [
+      ['getting-started', 'Getting started', 'Your first world, first resources and first trip through the gateway.'],
+      ['oneblock-progression', 'OneBlock progression', 'Resources, tools and the seven phases.'],
+      ['dimensional-expeditions', 'Dimensional expeditions', 'Your 15 minutes, and how to get home if you miss the portal.'],
+      ['island-expansion', 'Island expansion', 'Chapters, more space and new dimensions.'],
+    ],
+    small: [
+      ['installation', 'Installation', 'The modpack, or the mod in your own pack.'],
+      ['multiplayer', 'Multiplayer', 'Teams, shared islands and the official server.'],
+      ['troubleshooting', 'Troubleshooting', 'Common problems and how to report a bug.'],
+    ],
+    realmsEyebrow: 'The gateway', realmsTitle: 'Eight dimensions to explore',
+    realmsText: 'Each island tier opens new destinations. Your gateway picks one a day, so no two trips in a row are the same.',
+    tier: 'Tier',
+    realms: ['Twilight Forest', 'The Aether', 'The Nether', 'The Undergarden', 'Mining World', 'The End', 'The Other', 'The Otherside'],
+    itemsEyebrow: 'The mod', itemsTitle: 'What the mod adds',
+    items: [
+      ['Permanent Dimensional Gateway', 'Your island’s gateway. It opens on a new dimension every day.'],
+      ['Expedition Return Gateway', 'Your way home, for 15 minutes from the moment you step through.'],
+      ['Dimensional Fracture', 'Missed the portal? Repair it with fragments, then step in to escape.'],
+      ['Dimensional Fragment', 'Dropped by Rift Guardians. A fracture takes 4 to 6.'],
+      ['Rift Compass', 'Points to your return gateway or the fracture.'],
+    ],
+    serverEyebrow: 'Play together', serverTitle: 'Join the official server',
+    serverText: 'In the modpack it’s listed under Community on the multiplayer screen. You can also add it yourself:',
+    copy: 'Copy', copied: 'Copied',
+    links: ['The mod on CurseForge', 'The modpack on CurseForge', 'Report a bug'],
+    about: 'The mod brings the OneBlock, island borders, the gateway and the escape mechanics. The modpack adds the other mods, the quest book and the pack settings for the full survival experience.',
+    note: 'Up to date for 1.1.2 Beta. Worlds created with an older version keep some of their old settings, like their OneBlock phases.',
+  },
+  fr: {
+    eyebrow: 'Guides du joueur · 1.1.2 Beta',
+    tagline: 'Fais grandir ton île à partir d’un seul bloc, avance dans les phases du OneBlock et prépare ton prochain passage par le portail. Ces guides couvrent le mod comme le modpack OneBlock.',
+    meta: ['Minecraft 1.21.1', 'NeoForge', 'Solo et multijoueur'],
+    start: 'Bien démarrer', install: 'L’installer',
+    stats: [['7', 'phases du OneBlock'], ['8', 'niveaux d’île'], ['8', 'dimensions'], ['120', 'quêtes dans le modpack']],
+    guidesEyebrow: 'Guides', guidesTitle: 'Trouve ton chemin',
+    guides: [
+      ['getting-started', 'Bien démarrer', 'Ton premier monde, tes premières ressources et ton premier voyage par le portail.'],
+      ['oneblock-progression', 'Progression du OneBlock', 'Ressources, outils et les sept phases.'],
+      ['dimensional-expeditions', 'Expéditions dimensionnelles', 'Tes 15 minutes, et comment rentrer si tu rates le portail.'],
+      ['island-expansion', 'Agrandissement de l’île', 'Chapitres, plus de place et nouvelles dimensions.'],
+    ],
+    small: [
+      ['installation', 'Installation', 'Le modpack, ou le mod dans ton propre pack.'],
+      ['multiplayer', 'Multijoueur', 'Équipes, îles partagées et serveur officiel.'],
+      ['troubleshooting', 'Dépannage', 'Les problèmes courants et comment signaler un bug.'],
+    ],
+    realmsEyebrow: 'Le portail', realmsTitle: 'Huit dimensions à explorer',
+    realmsText: 'Chaque niveau d’île ouvre de nouvelles destinations. Ton portail en choisit une par jour, jamais deux fois la même d’affilée.',
+    tier: 'Niveau',
+    realms: ['Forêt du Crépuscule', 'L’Aether', 'Le Nether', 'L’Undergarden', 'Le Monde de minage', 'L’End', 'L’Autre Monde', 'L’Autre Côté'],
+    itemsEyebrow: 'Le mod', itemsTitle: 'Ce que le mod ajoute',
+    items: [
+      ['Portail dimensionnel permanent', 'Le portail de ton île. Il s’ouvre sur une nouvelle dimension chaque jour.'],
+      ['Portail de retour d’expédition', 'Ton chemin du retour, pendant 15 minutes dès que tu le franchis.'],
+      ['Fracture dimensionnelle', 'Portail raté ? Répare-la avec des fragments, puis entre pour t’échapper.'],
+      ['Fragment dimensionnel', 'Lâché par les Gardiens de faille. Une fracture en demande 4 à 6.'],
+      ['Boussole de faille', 'Indique ton portail de retour ou la fracture.'],
+    ],
+    serverEyebrow: 'Jouer ensemble', serverTitle: 'Rejoins le serveur officiel',
+    serverText: 'Dans le modpack, il apparaît dans Communauté sur l’écran multijoueur. Tu peux aussi l’ajouter toi-même :',
+    copy: 'Copier', copied: 'Copié',
+    links: ['Le mod sur CurseForge', 'Le modpack sur CurseForge', 'Signaler un bug'],
+    about: 'Le mod apporte le OneBlock, les bordures d’île, le portail et tout le système d’évasion. Le modpack ajoute les autres mods, le livre de quêtes et les réglages du pack pour l’expérience de survie complète.',
+    note: 'À jour pour la 1.1.2 Beta. Les mondes créés avec une version plus ancienne gardent certains de leurs anciens réglages, comme leurs phases de OneBlock.',
+  },
+  'zh-cn': {
+    eyebrow: '玩家指南 · 1.1.2 Beta',
+    tagline: '从一个方块起步，把岛屿越建越大，一步步推进 OneBlock 的各个阶段，再规划下一次穿越传送门的远征。这些指南同时涵盖模组本体和 OneBlock 整合包。',
+    meta: ['Minecraft 1.21.1', 'NeoForge', '单人与多人'],
+    start: '新手入门', install: '安装',
+    stats: [['7', 'OneBlock 阶段'], ['8', '岛屿等级'], ['8', '可探索维度'], ['120', '整合包任务']],
+    guidesEyebrow: '指南', guidesTitle: '从这里出发',
+    guides: [
+      ['getting-started', '新手入门', '创建第一个世界，收集第一批资源，完成第一次传送门远征。'],
+      ['oneblock-progression', 'OneBlock 进度', '资源、工具和七个阶段。'],
+      ['dimensional-expeditions', '维度远征', '你的 15 分钟，以及错过传送门后如何回家。'],
+      ['island-expansion', '岛屿扩张', '章节、更大的空间和新维度。'],
+    ],
+    small: [
+      ['installation', '安装', '整合包，或把模组加入你自己的整合包。'],
+      ['multiplayer', '多人游戏', '队伍、共享岛屿和官方服务器。'],
+      ['troubleshooting', '常见问题', '常见问题以及如何报告 bug。'],
+    ],
+    realmsEyebrow: '传送门', realmsTitle: '八个维度等你探索',
+    realmsText: '每个岛屿等级都会开放新的目的地。传送门每天选择一个，连续两次不会相同。',
+    tier: '等级',
+    realms: ['暮色森林', '天境', '下界', '幽暗地底', '采矿世界', '末地', '异界', '彼方'],
+    itemsEyebrow: '模组', itemsTitle: '模组新增内容',
+    items: [
+      ['永久维度传送门', '岛屿上的传送门，每天通往一个新的维度。'],
+      ['远征归途传送门', '回家的路：从你踏入的那一刻起开放 15 分钟。'],
+      ['维度裂隙', '错过了传送门？用碎片修复裂隙，然后走进去逃脱。'],
+      ['维度碎片', '由裂隙守卫掉落。修复一个裂隙需要 4 到 6 个。'],
+      ['裂隙罗盘', '指向你的归途传送门或裂隙。'],
+    ],
+    serverEyebrow: '一起游玩', serverTitle: '加入官方服务器',
+    serverText: '在整合包中，它列在多人游戏界面的社区分类下。你也可以手动添加：',
+    copy: '复制', copied: '已复制',
+    links: ['CurseForge 上的模组', 'CurseForge 上的整合包', '报告 bug'],
+    about: '模组提供 OneBlock、岛屿边界、传送门和逃脱机制。整合包加入其他模组、任务书和整合包设置，带来完整的生存体验。',
+    note: '内容已更新至 1.1.2 Beta。用旧版本创建的世界会保留部分旧设置，例如 OneBlock 阶段。',
+  },
+}[lang];
+
+const guideImages = [gateway, oneblock, expedition, expansion];
+const smallIcons = [iGateway, iReturn, iCompass];
+const realmImages = [rTf, rAe, rNether, rUg, rMining, rEnd, rOther, rOtherside];
+const realmTiers = [0, 1, 2, 4, 5, 6, 6, 7];
+const itemImages = [iGateway, iReturn, iFracture, iFragment, iCompass];
+---
+
+<div class="dc-landing not-content">
+  <section class="dc-hero2">
+    <div class="dc-hero2-copy">
+      <p class="dc-pixel-chip"><span class="dc-eyebrow-dot" aria-hidden="true"></span>{T.eyebrow}</p>
+      <p class="dc-wordmark" aria-hidden="true"><span>Dimensional</span> <span>Chaos</span></p>
+      <p class="dc-wordmark-sub" aria-hidden="true">OneBlock</p>
+      <p class="dc-hero2-tagline">{T.tagline}</p>
+      <div class="dc-actions">
+        <a class="dc-btn dc-btn--primary" href="./getting-started/">{T.start}<span aria-hidden="true">→</span></a>
+        <a class="dc-btn dc-btn--ghost" href="./installation/">{T.install}</a>
+      </div>
+      <ul class="dc-meta">{T.meta.map((m) => <li>{m}</li>)}</ul>
+    </div>
+    <div class="dc-hero2-art" aria-hidden="true">
+      <div class="dc-hero2-glow"></div>
+      <Image class="dc-hero2-island" src={island} alt="" widths={[450, 900]} sizes="(min-width: 60rem) 30rem, 80vw" loading="eager" fetchpriority="high" />
+    </div>
+  </section>
+
+  <ul class="dc-stats">
+    {T.stats.map(([n, label]) => (
+      <li><span class="dc-stat-n">{n}</span><span class="dc-stat-l">{label}</span></li>
+    ))}
+  </ul>
+
+  <section class="dc-section">
+    <header class="dc-section-head">
+      <p class="dc-pixel">{T.guidesEyebrow}</p>
+      <h2>{T.guidesTitle}</h2>
+    </header>
+    <div class="dc-cards">
+      {T.guides.map(([slug, title, text], i) => (
+        <a class="dc-card" href={`./${slug}/`}>
+          <Image src={guideImages[i]} alt="" widths={[400, 800]} sizes="(min-width: 72rem) 18rem, (min-width: 40rem) 45vw, 100vw" />
+          <span class="dc-card-body"><strong>{title}</strong><span>{text}</span></span>
+        </a>
+      ))}
+    </div>
+    <div class="dc-minis">
+      {T.small.map(([slug, title, text], i) => (
+        <a class="dc-mini" href={`./${slug}/`}>
+          <Image src={smallIcons[i]} alt="" width={56} height={56} />
+          <span><strong>{title}</strong><span>{text}</span></span>
+          <span class="dc-mini-arrow" aria-hidden="true">→</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <header class="dc-section-head">
+      <p class="dc-pixel">{T.realmsEyebrow}</p>
+      <h2>{T.realmsTitle}</h2>
+      <p>{T.realmsText}</p>
+    </header>
+    <ul class="dc-realms">
+      {T.realms.map((name, i) => (
+        <li class="dc-realm">
+          <Image src={realmImages[i]} alt="" widths={[400, 800]} sizes="(min-width: 72rem) 18rem, (min-width: 40rem) 45vw, 100vw" />
+          <span class="dc-realm-label"><strong>{name}</strong><span class="dc-tier">{T.tier} {realmTiers[i]}</span></span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="dc-section">
+    <header class="dc-section-head">
+      <p class="dc-pixel">{T.itemsEyebrow}</p>
+      <h2>{T.itemsTitle}</h2>
+    </header>
+    <ul class="dc-items">
+      {T.items.map(([name, text], i) => (
+        <li class="dc-item">
+          <span class="dc-item-icon"><Image src={itemImages[i]} alt="" width={96} height={96} /></span>
+          <strong>{name}</strong>
+          <span>{text}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="dc-server">
+    <div class="dc-server-copy">
+      <p class="dc-pixel">{T.serverEyebrow}</p>
+      <h2>{T.serverTitle}</h2>
+      <p>{T.serverText}</p>
+      <div class="dc-address">
+        <code>{SERVER}</code>
+        <button type="button" class="dc-copy" data-copy={SERVER} data-done={T.copied}>{T.copy}</button>
+      </div>
+    </div>
+    <div class="dc-server-links">
+      <a class="dc-btn dc-btn--cf" href={MOD}>{T.links[0]}</a>
+      <a class="dc-btn dc-btn--cf" href={PACK}>{T.links[1]}</a>
+      <a class="dc-btn dc-btn--ghost" href={BUG}>{T.links[2]}</a>
+    </div>
+  </section>
+
+  <p class="dc-about">{T.about}</p>
+  <p class="dc-note">{T.note}</p>
+</div>
+
+<script>
+  for (const button of document.querySelectorAll<HTMLButtonElement>('.dc-copy')) {
+    const label = button.textContent;
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(button.dataset.copy ?? '');
+        button.textContent = button.dataset.done ?? label;
+        button.classList.add('is-done');
+        setTimeout(() => { button.textContent = label; button.classList.remove('is-done'); }, 1800);
+      } catch {
+        const code = button.previousElementSibling;
+        if (code) getSelection()?.selectAllChildren(code);
+      }
+    });
+  }
+</script>
