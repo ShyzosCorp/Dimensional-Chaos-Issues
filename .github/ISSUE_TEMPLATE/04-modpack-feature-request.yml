@@ -1,32 +1,30 @@
-name: Modpack — Feature Request
-description: Suggest a feature or change for the OneBlock modpack.
+name: Modpack idea
+description: An idea or change for the OneBlock modpack.
 title: "[Modpack Feature] "
 labels: [enhancement, needs-triage, "project:modpack"]
 body:
   - type: markdown
     attributes:
       value: |
-        Suggest a change to OneBlock's content, settings or gameplay. Search existing requests first and keep each request to one idea.
-        For features of the custom mod itself, use Mod — Feature Request.
-        Everything here is public, so leave out private information and credentials.
+        Got an idea? We'd love to hear it. One idea per request, please, and have a quick look at the existing ones first.
+        Ideas about the Dimensional Chaos mod itself go in the mod idea form.
   - type: input
     id: summary
     attributes:
-      label: Feature summary
-      description: What's the idea? A sentence is enough.
+      label: Your idea in one sentence
     validations:
       required: true
   - type: textarea
     id: motivation
     attributes:
-      label: Problem or limitation
-      description: What problem or limitation would this address?
+      label: Why would it help?
+      description: What's missing or annoying right now?
     validations:
       required: true
   - type: dropdown
     id: gameplay-area
     attributes:
-      label: Relevant gameplay area
+      label: What part of the game?
       options:
         - Progression / balancing
         - Quests
@@ -42,23 +40,23 @@ body:
   - type: textarea
     id: solution
     attributes:
-      label: Proposed solution
-      description: How would you like it to work?
+      label: How do you picture it?
+      description: How would it work in game?
     validations:
       required: true
   - type: textarea
     id: player-benefit
     attributes:
-      label: Expected player benefit
-      description: Who would this help, and how?
+      label: Who would enjoy it?
+      description: Solo players, teams, tech players, explorers...
     validations:
       required: true
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternative suggestions (optional)
+      label: Other ways to do it (optional)
   - type: textarea
     id: context
     attributes:
-      label: Additional context (optional)
-      description: Add examples or media if they help. Remove private information first.
+      label: Anything else? (optional)
+      description: Examples, screenshots, other packs that do it well...

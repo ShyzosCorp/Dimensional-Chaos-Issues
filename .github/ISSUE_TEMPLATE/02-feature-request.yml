@@ -1,41 +1,39 @@
-name: Mod — Feature Request
-description: Suggest a feature or change for the Dimensional Chaos mod.
+name: Mod idea
+description: An idea or change for the Dimensional Chaos mod.
 title: "[Feature] "
 labels: [enhancement, needs-triage, "project:mod"]
 body:
   - type: markdown
     attributes:
       value: |
-        What would you like to see in the Dimensional Chaos mod? Search existing requests first and keep each request to one idea.
-        For pack content or settings, use Modpack — Feature Request.
-        Everything here is public, so leave out personal information and credentials.
+        Got an idea? We'd love to hear it. One idea per request, please, and have a quick look at the existing ones first.
+        Ideas about the pack's content or settings go in the modpack idea form.
   - type: input
     id: summary
     attributes:
-      label: Feature summary
-      description: What's the idea? A sentence is enough.
+      label: Your idea in one sentence
     validations:
       required: true
   - type: textarea
     id: motivation
     attributes:
-      label: Problem or motivation
-      description: What problem would this solve, or what would it make better?
+      label: Why would it help?
+      description: What's missing or annoying right now?
     validations:
       required: true
   - type: textarea
     id: solution
     attributes:
-      label: Proposed solution
-      description: How would you like it to work?
+      label: How do you picture it?
+      description: How would it work in game?
     validations:
       required: true
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternatives considered (optional)
+      label: Other ways to do it (optional)
   - type: textarea
     id: context
     attributes:
-      label: Additional context (optional)
-      description: Add examples or screenshots if they help. Remove private information first.
+      label: Anything else? (optional)
+      description: Examples, screenshots, other packs that do it well...

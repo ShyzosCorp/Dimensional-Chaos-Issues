@@ -1,28 +1,21 @@
 # Dimensional Chaos issues
 
-Report bugs or suggest features for the Dimensional Chaos mod and OneBlock modpack here.
-Both are made by ShyzosCorp for Minecraft 1.21.1 with NeoForge.
+Found a bug or got an idea for Dimensional Chaos? This is the place.
 
-- [Dimensional Chaos](https://www.curseforge.com/minecraft/mc-mods/dimensional-chaos) is the custom gameplay mod.
-- [Dimensional Chaos – OneBlock](https://www.curseforge.com/minecraft/modpacks/dimensional-chaos-oneblock) combines it with other mods, pack settings and progression content.
+- [Dimensional Chaos](https://www.curseforge.com/minecraft/mc-mods/dimensional-chaos) is our mod.
+- [Dimensional Chaos – OneBlock](https://www.curseforge.com/minecraft/modpacks/dimensional-chaos-oneblock) is the modpack built around it.
 
-Search existing issues first, then [choose a form](https://github.com/ShyzosCorp/Dimensional-Chaos-Issues/issues/new/choose):
+Have a quick look at the existing issues first, then [pick a form](https://github.com/ShyzosCorp/Dimensional-Chaos-Issues/issues/new/choose):
 
-| | Bug report | Feature request |
+| | Bug | Idea |
 | --- | --- | --- |
 | Mod | [Report a mod bug](https://github.com/ShyzosCorp/Dimensional-Chaos-Issues/issues/new?template=01-bug-report.yml) | [Suggest a mod feature](https://github.com/ShyzosCorp/Dimensional-Chaos-Issues/issues/new?template=02-feature-request.yml) |
-| OneBlock modpack | [Report a modpack bug](https://github.com/ShyzosCorp/Dimensional-Chaos-Issues/issues/new?template=03-modpack-bug-report.yml) | [Suggest a modpack feature](https://github.com/ShyzosCorp/Dimensional-Chaos-Issues/issues/new?template=04-modpack-feature-request.yml) |
+| Modpack | [Report a modpack bug](https://github.com/ShyzosCorp/Dimensional-Chaos-Issues/issues/new?template=03-modpack-bug-report.yml) | [Suggest a modpack feature](https://github.com/ShyzosCorp/Dimensional-Chaos-Issues/issues/new?template=04-modpack-feature-request.yml) |
 
-Use the Mod forms for problems or ideas specific to the custom mod, including compatibility bugs
-you've traced to it. Use the Modpack forms for mod conflicts, recipes, pack settings, progression
-or server pack problems. If you're unsure, use Modpack and describe what's happening.
+Not sure if it's the mod or the pack? Use the modpack form, we'll sort it out.
 
-Include your versions, operating system, whether you're playing alone, on LAN or on a server,
-and the steps that trigger the bug. Tell us what you expected and what happened instead.
-For modpack bugs, include how you installed it and any mods you've added, removed or updated.
-For performance or memory problems, include your RAM allocation. Logs help; add a crash report
-if there was a crash and you have one.
+The more we know, the faster we can fix it: your versions, singleplayer, LAN or server, and what you did right before it went wrong. Logs help a lot, especially after a crash.
 
-Reports and attachments are public. Remove credentials, session data, personal paths,
-IP addresses and other private information from logs, screenshots and videos before posting.
-Don't upload worlds, player data or launcher account files.
+Everything posted here is public. Remove anything personal from logs and screenshots (IP addresses, your username in file paths, tokens), and please don't upload worlds or account files.
+
+Guides for players: [Dimensional Chaos guides](https://shyzoscorp.github.io/Dimensional-Chaos-Issues/), in English, French and Simplified Chinese.
