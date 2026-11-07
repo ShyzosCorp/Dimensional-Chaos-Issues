@@ -1,0 +1,22 @@
+---
+// Starlight's footer (previous/next links), followed by the site credits bar.
+import Default from '@astrojs/starlight/components/Footer.astro';
+
+const locale = Astro.locals.starlightRoute.locale;
+const t = {
+  fr: { tag: 'Guides officiels du joueur', mod: 'Le mod', pack: 'Le modpack', bug: 'Signaler un bug', server: 'Serveur officiel' },
+  'zh-cn': { tag: '官方玩家指南', mod: '模组', pack: '整合包', bug: '报告 bug', server: '官方服务器' },
+}[locale ?? ''] ?? { tag: 'Official player guides', mod: 'The mod', pack: 'The modpack', bug: 'Report a bug', server: 'Official server' };
+---
+
+<Default />
+<div class="dc-footer">
+  <p class="dc-footer-brand"><span class="dc-square" aria-hidden="true"></span>Dimensional Chaos · {t.tag}</p>
+  <p class="dc-footer-links">
+    <a href="https://www.curseforge.com/minecraft/mc-mods/dimensional-chaos">{t.mod}</a>
+    <a href="https://www.curseforge.com/minecraft/modpacks/dimensional-chaos-oneblock">{t.pack}</a>
+    <a href="https://github.com/ShyzosCorp/Dimensional-Chaos-Issues/issues/new/choose">{t.bug}</a>
+    <span>{t.server}: <code>play-dc.shyzos.xyz</code></span>
+  </p>
+  <p class="dc-footer-version">1.1.2 Beta · Minecraft 1.21.1 · NeoForge</p>
+</div>
