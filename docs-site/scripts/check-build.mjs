@@ -4,13 +4,15 @@ import { join, resolve } from 'node:path';
 import { rootURL } from '../site.config.mjs';
 
 const dist = resolve('dist');
-const slugs = ['', 'installation/', 'getting-started/', 'oneblock-progression/', 'dimensional-expeditions/', 'island-expansion/', 'multiplayer/', 'troubleshooting/'];
+const guides = ['', 'installation/', 'getting-started/', 'oneblock-progression/', 'dimensional-expeditions/', 'island-expansion/', 'multiplayer/', 'troubleshooting/'];
+// English at the root, French and Simplified Chinese under their locale folders.
+const slugs = ['', 'fr/', 'zh-cn/'].flatMap(locale => guides.map(guide => locale + guide));
 const read = path => readFileSync(join(dist, path), 'utf8');
 const attrs = tag => Object.fromEntries([...tag.matchAll(/([\w:-]+)=["']([^"']*)["']/g)].map(m => [m[1], m[2]]));
 const rootPath = rootURL.pathname;
 const sitemap = read('sitemap-0.xml');
 const sitemapURLs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]).sort();
-assert.deepEqual(sitemapURLs, slugs.map(slug => new URL(slug, rootURL).href).sort(), 'Sitemap must contain exactly the eight guides');
+assert.deepEqual(sitemapURLs, slugs.map(slug => new URL(slug, rootURL).href).sort(), 'Sitemap must contain exactly the eight guides in each language');
 assert.ok(read('sitemap-index.xml').includes(new URL('sitemap-0.xml', rootURL).href));
 const robots = read('robots.txt');
 assert.ok(robots.includes(`Sitemap: ${new URL('sitemap-index.xml', rootURL).href}`));
@@ -47,4 +49,4 @@ assert.ok(existsSync(join(dist, 'pagefind/pagefind.js')), 'Pagefind runtime miss
 const pagefind = readdirSync(join(dist, 'pagefind'), { recursive: true });
 assert.ok(pagefind.some(name => name.endsWith('.pf_index')), 'Pagefind index missing');
 assert.ok(pagefind.some(name => name.endsWith('.pf_fragment')), 'Pagefind fragments missing');
-console.log(`Checked eight guides, ${links} local links/assets, canonical URLs, metadata, sitemap, robots and Pagefind files.`);
+console.log(`Checked eight guides in three languages, ${links} local links/assets, canonical URLs, metadata, sitemap, robots and Pagefind files.`);

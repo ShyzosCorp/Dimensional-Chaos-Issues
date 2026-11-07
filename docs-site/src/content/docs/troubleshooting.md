@@ -1,28 +1,28 @@
 ---
 title: "Troubleshooting"
-description: "Help with startup, missing drops, quests, gateways and reporting bugs in the Dimensional Chaos mod or OneBlock pack."
+description: "Help with startup problems, missing drops, quests, the gateway and reporting bugs for Dimensional Chaos."
 ---
 
 ## The game won't start
 
-Check Minecraft 1.21.1, NeoForge, Java 21 and the required mods. For the official pack, try an unchanged profile of the same release to see whether added mods caused the problem. Don't overwrite your existing profile or world.
+Check Minecraft 1.21.1, NeoForge, Java 21 and the required mods. For the modpack, try a fresh profile of the same version to see whether a mod you added is the cause. Don't overwrite your existing profile or world.
 
-## The OneBlock won't break or gives no drops
+## The OneBlock won't break or drops nothing
 
-Check that you're on your own or your team's island, in Survival, using a suitable tool. If you own a tool for that block, hold it. Look in the six-slot reserve if drops seem missing. If the block stays stuck, save the error and report it; don't delete the island's saved files to force a reset.
+Make sure you're on your own or your team's island, in Survival, with a suitable tool in hand. If drops seem to go missing, check the six-slot reserve. If the block stays stuck, keep the error message and report it. Don't delete the island's save files to force a reset.
 
 ## Quests or expansion are missing
 
-These need the supported Slate integration. Check the pack version and quest book before assuming that mining more OneBlocks will expand the border. If you've customized the quest book, the mod preserves it rather than overwriting it automatically. Back it up before asking for help.
+These need Slate Quests and the modpack's quest book. Mining more won't expand the border on its own, but reaching a tier can start a OneBlock phase early. If you've edited the quest book yourself, the mod keeps your version instead of overwriting it. Back it up before asking for help.
 
-## The gateway isn't going where I expected
+## The gateway didn't go where I expected
 
-Check your island tier and the HUD destination. A realm must be installed, enabled and unlocked before the gateway can use it. In 1.1.0, waiting for daylight won't reset the expedition timer.
+Check your island tier and `/dc status`. A dimension has to be installed and unlocked before the gateway can use it, and the gateway never picks the same one twice in a row when another is available. If your chapter needs a dimension, it goes there first, at most every other day.
 
 ## Still stuck?
 
-[Report the problem](https://github.com/ShyzosCorp/Dimensional-Chaos-Issues/issues/new/choose). Use Mod for a bug in Dimensional Chaos itself, or Modpack for pack settings, recipes, installation or conflicts between installed mods. If unsure, choose Modpack.
+[Open an issue](https://github.com/ShyzosCorp/Dimensional-Chaos-Issues/issues/new/choose). Not sure whether it's the mod or the pack? Use the modpack form.
 
-Include the mod and pack versions, Minecraft and NeoForge versions, your operating system, whether it's singleplayer, LAN or a server, and steps to reproduce the problem. Mention any added or changed mods. For performance problems, include allocated RAM.
+Tell us your mod and pack versions, whether you play singleplayer, LAN or on a server, and what you did right before it went wrong. Mention any mods you added or changed. For lag or memory problems, include how much RAM you gave the game.
 
-Attach relevant client or server logs, and a crash report if there was a crash. Reports are public: remove credentials, session data, personal paths, IP addresses and other private information first. Don't upload worlds, player data or launcher account files.
+Attach `logs/latest.log`, and the crash report if the game crashed. Everything is public, so remove anything personal first (IP addresses, your username in file paths, tokens). Don't upload worlds or account files.
