@@ -8,11 +8,11 @@ Use the same pack version as the server. Teams use Slate Teams, which the modpac
 
 ## Official server
 
-Want to play with others? Join the official server at **play-dc.shyzos.xyz**. In the modpack, it's listed under **Community** on the multiplayer screen.
+Want to play with others? Join the official server at **play-dc.shyzos.xyz**. The modpack adds it to your server list the first time you start the game, so it shows on the multiplayer screen. If you remove or rename it, it doesn't come back.
 
 ## Create a team
 
-Open the Slate Teams menu (**K** by default) and choose **Create a team**. Pick a name, then **Found team**. You keep your island and items, and your island becomes the team's island. This works whether you're an operator or not.
+Open the Slate Teams menu (**K** by default) and choose **Create a team**. Pick a name, then **Found team**. You keep your island and items, and your island becomes the team's island. Your completed quests and claimed rewards carry over to the team, so the island keeps its tier. This works whether you're an operator or not.
 
 `/dc team create <name>` does the same from chat, and `/dc team info` shows your team and island.
 
@@ -29,6 +29,8 @@ Players can also ask to join from the team list. A request never adds anyone by 
 ## What the team shares
 
 Team members share the island, the OneBlock and its six-slot reserve, and the island tier. Quest progress and rewards follow the pack's Slate quest settings. Each player has their own expedition timer.
+
+`/spawn` takes you to your own island, solo or team, and that's where you respawn.
 
 ## Leave, remove or hand over
 

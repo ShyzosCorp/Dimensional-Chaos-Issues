@@ -17,9 +17,11 @@ Le compteur ne tourne que pendant que tu joues. Le HUD et ta Boussole de faille 
 
 La tombée de la nuit ferme le portail de l’île, mais ceux qui sont déjà en expédition ne sont pas piégés pour autant : ils gardent leur propre temps pour rentrer.
 
+Pendant une expédition, les commandes de téléportation comme `/spawn`, `/home`, `/sethome`, `/back`, `/tpa` et `/warp` sont bloquées jusqu’à ce que tu rentres par ton portail de retour.
+
 ## Où va le portail
 
-Chaque île a une destination par jour, et jamais la même deux fois de suite quand une autre est disponible. Les dimensions débloquées récemment reviennent plus souvent ; les premières reviennent quand même de temps en temps.
+Chaque île a une destination par jour, et jamais la même deux fois de suite quand une autre est disponible. Le message de l’aube et `/dc rotate` donnent la dimension où mène le portail de ton île. Les dimensions débloquées récemment reviennent plus souvent ; les premières reviennent quand même de temps en temps.
 
 Quand ton chapitre d’agrandissement en cours demande une dimension que tu n’as pas encore visitée, le portail t’y emmène en priorité, au plus un jour sur deux. `/dc status` liste les dimensions qu’il te reste à visiter. Va voir [Agrandissement de l’île](../island-expansion/) pour savoir quelle dimension s’ouvre à quel palier.
 
@@ -31,7 +33,7 @@ Ton portail de retour se referme et tu es piégé. Le seul moyen de rentrer, c�
 - La réparation demande 4 fragments aux paliers 0 à 2, 5 aux paliers 3 à 5 et 6 à partir du palier 6. Fais un clic droit sur la fracture avec tes fragments, puis entre dedans.
 - Les gardiens deviennent plus forts, mieux armés et plus nombreux à mesure que ton île grandit : 3 au palier 0, jusqu’à 6 au palier 8.
 - Si des fragments sont perdus (lave, vide), un gardien de secours en apporte 2 de plus, une seule fois, au bout de 3 minutes.
-- Les monstres ordinaires ne lâchent pas de fragments.
+- Les monstres ordinaires ne lâchent pas de fragments. Tu peux aussi en fabriquer avec du quartz, de l’améthyste et de la pierre lumineuse.
 
 Tant que tu es piégé, ni les commandes de téléportation, ni les autres portails, ni la mort ne te ramèneront chez toi. Tomber de l’Aether ne marche pas non plus. Une fois utilisée, la fracture se referme et se change en obsidienne pleureuse.
 

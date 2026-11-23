@@ -1,13 +1,15 @@
 ---
 title: "Installation"
-description: "Install the OneBlock modpack, or add the Dimensional Chaos mod to your own NeoForge pack. Requirements for 1.1.2 Beta."
+description: "Install the OneBlock modpack, or add the Dimensional Chaos mod to your own NeoForge pack. Requirements for 1.1.5 Beta."
 ---
 
-Dimensional Chaos 1.1.2 Beta runs on Minecraft 1.21.1 with NeoForge and Java 21.
+Dimensional Chaos 1.1.5 Beta runs on Minecraft 1.21.1 with NeoForge and Java 21.
 
 ## OneBlock modpack
 
 Install [Dimensional Chaos – OneBlock](https://www.curseforge.com/minecraft/modpacks/dimensional-chaos-oneblock) from the CurseForge App. It sets up NeoForge and already includes the mod, so don't add another copy. Give the game at least 6 GB of memory.
+
+The pack and the mod are available in English, French, Polish and Simplified Chinese.
 
 Keep a separate profile for the pack, and back up your worlds before updating.
 

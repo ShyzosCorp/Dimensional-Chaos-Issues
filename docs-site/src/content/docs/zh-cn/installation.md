@@ -1,13 +1,15 @@
 ---
 title: "安装"
-description: "安装 OneBlock 整合包，或把 Dimensional Chaos 模组加入你自己的 NeoForge 整合包。附 1.1.2 Beta 的运行要求。"
+description: "安装 OneBlock 整合包，或把 Dimensional Chaos 模组加入你自己的 NeoForge 整合包。附 1.1.5 Beta 的运行要求。"
 ---
 
-Dimensional Chaos 1.1.2 Beta 运行于 Minecraft 1.21.1，需要 NeoForge 和 Java 21。
+Dimensional Chaos 1.1.5 Beta 运行于 Minecraft 1.21.1，需要 NeoForge 和 Java 21。
 
 ## OneBlock 整合包
 
 通过 CurseForge App 安装 [Dimensional Chaos – OneBlock](https://www.curseforge.com/minecraft/modpacks/dimensional-chaos-oneblock)。它会自动配置好 NeoForge，并且已经内置模组本体，所以不要再额外添加一份。请给游戏分配至少 6 GB 内存。
+
+整合包和模组支持英语、法语、波兰语和简体中文。
 
 为整合包单独建一个配置文件，更新前记得备份世界。
 

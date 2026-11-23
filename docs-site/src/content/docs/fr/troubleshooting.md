@@ -11,6 +11,8 @@ Vérifie Minecraft 1.21.1, NeoForge, Java 21 et les mods requis. Pour le modpack
 
 Vérifie que tu es sur ton île ou celle de ton équipe, en Survie, avec un outil adapté en main. Si du butin semble disparaître, regarde dans la réserve de six emplacements. Si ça bloque toujours, garde le message d’erreur et signale-le. Ne supprime pas les fichiers de sauvegarde de l’île pour forcer une réinitialisation.
 
+Si le OneBlock a disparu ou ne répond plus, il revient tout seul au chargement de ton île. Tes blocs minés sont conservés.
+
 ## Les quêtes ou l’agrandissement manquent
 
 Il te faut Slate Quests et le livre de quêtes du modpack. Miner davantage ne repousse pas la bordure à lui seul, mais atteindre un palier peut lancer une phase du OneBlock plus tôt. Si tu as modifié le livre de quêtes toi-même, le mod garde ta version au lieu de l’écraser. Fais-en une sauvegarde avant de demander de l’aide.
@@ -18,6 +20,10 @@ Il te faut Slate Quests et le livre de quêtes du modpack. Miner davantage ne re
 ## Le portail ne m’a pas emmené où je pensais
 
 Vérifie le palier de ton île et `/dc status`. Une dimension doit être installée et débloquée pour que le portail puisse y aller, et il ne choisit jamais la même deux fois de suite quand une autre est disponible. Si ton chapitre a besoin d’une dimension, il y va en priorité, au plus un jour sur deux.
+
+## Mes touches ont changé
+
+Les touches du pack fonctionnent avec les armes TACZ : **R** recharge, la roue d’outils de Better Inventory est sur **pavé numérique 6**, le tri sur le **clic molette** et la grande carte de Xaero sur **pavé numérique 7**. Ce réglage ne s’applique qu’une fois, et seulement aux touches que tu n’as jamais changées. Tu peux les remettre dans **Options > Commandes**.
 
 ## Toujours bloqué ?
 
