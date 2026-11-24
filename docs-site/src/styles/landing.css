@@ -350,6 +350,13 @@
 .dc-copy.is-done { background: #6dffa8; }
 .dc-server-links { display: flex; flex-direction: column; gap: .85rem; }
 
+/* DatHost affiliate banner */
+.dc-affiliate { max-width: 56rem; margin: calc(clamp(3rem, 7vw, 5rem) * -0.5) auto 0; text-align: center; }
+.dc-affiliate p { margin: 0 0 .7rem; color: var(--dc-muted); font-size: .95rem; }
+.dc-affiliate a { display: block; transition: transform .12s ease, filter .12s ease; }
+.dc-affiliate a:hover { transform: translateY(-2px); filter: brightness(1.08); }
+.dc-affiliate img { display: block; width: 100%; height: auto; }
+
 .dc-about { max-width: 50rem; margin: 0; padding: 1.1rem 1.35rem; border-inline-start: 4px solid var(--dc-violet); color: var(--dc-text); font-size: 1.02rem; line-height: 1.75; }
 .dc-note {
   max-width: 50rem;

@@ -10,6 +10,10 @@ Use the same pack version as the server. Teams use Slate Teams, which the modpac
 
 Want to play with others? Join the official server at **play-dc.shyzos.xyz**. The modpack adds it to your server list the first time you start the game, so it shows on the multiplayer screen. If you remove or rename it, it doesn't come back.
 
+The official server is hosted by DatHost. Want your own server? Get one through our affiliate link:
+
+[![Official DatHost affiliate](../../assets/media/dathost-affiliate.webp)](https://dathost.com/r/Shyzuu?c=b2366c6f)
+
 ## Create a team
 
 Open the Slate Teams menu (**K** by default) and choose **Create a team**. Pick a name, then **Found team**. You keep your island and items, and your island becomes the team's island. Your completed quests and claimed rewards carry over to the team, so the island keeps its tier. This works whether you're an operator or not.

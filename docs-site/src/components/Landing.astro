@@ -20,6 +20,7 @@ import iReturn from '../assets/media/item-return-gateway.webp';
 import iFracture from '../assets/media/item-active-fracture.webp';
 import iFragment from '../assets/media/item-fragment.webp';
 import iCompass from '../assets/media/item-compass.webp';
+import dathost from '../assets/media/dathost-affiliate.webp';
 
 interface Props { lang: 'en' | 'fr' | 'zh-cn' }
 const { lang } = Astro.props;
@@ -28,6 +29,7 @@ const MOD = 'https://www.curseforge.com/minecraft/mc-mods/dimensional-chaos';
 const PACK = 'https://www.curseforge.com/minecraft/modpacks/dimensional-chaos-oneblock';
 const BUG = 'https://github.com/ShyzosCorp/Dimensional-Chaos-Issues/issues/new/choose';
 const SERVER = 'play-dc.shyzos.xyz';
+const DATHOST = 'https://dathost.com/r/Shyzuu?c=b2366c6f';
 
 const T = {
   en: {
@@ -61,7 +63,8 @@ const T = {
       ['Rift Compass', 'Points to your return gateway or the fracture.'],
     ],
     serverEyebrow: 'Play together', serverTitle: 'Join the official server',
-    serverText: 'In the modpack it’s listed under Community on the multiplayer screen. You can also add it yourself:',
+    serverText: 'The modpack adds it to your server list the first time you start the game. You can also add it yourself:',
+    hosting: 'The official server is hosted by DatHost. Want your own server? Get one through our affiliate link.', hostingAlt: 'Official DatHost affiliate: host your server on DatHost',
     copy: 'Copy', copied: 'Copied',
     links: ['The mod on CurseForge', 'The modpack on CurseForge', 'Report a bug'],
     about: 'The mod brings the OneBlock, island borders, the gateway and the escape mechanics. The modpack adds the other mods, the quest book and the pack settings for the full survival experience.',
@@ -98,7 +101,8 @@ const T = {
       ['Boussole de faille', 'Indique ton portail de retour ou la fracture.'],
     ],
     serverEyebrow: 'Jouer ensemble', serverTitle: 'Rejoins le serveur officiel',
-    serverText: 'Dans le modpack, il apparaît dans Communauté sur l’écran multijoueur. Tu peux aussi l’ajouter toi-même :',
+    serverText: 'Le modpack l’ajoute à ta liste de serveurs au premier lancement du jeu. Tu peux aussi l’ajouter toi-même :',
+    hosting: 'Le serveur officiel est hébergé par DatHost. Tu veux ton propre serveur ? Passe par notre lien d’affiliation.', hostingAlt: 'Affilié officiel DatHost : héberge ton serveur chez DatHost',
     copy: 'Copier', copied: 'Copié',
     links: ['Le mod sur CurseForge', 'Le modpack sur CurseForge', 'Signaler un bug'],
     about: 'Le mod apporte le OneBlock, les bordures d’île, le portail et tout le système d’évasion. Le modpack ajoute les autres mods, le livre de quêtes et les réglages du pack pour l’expérience de survie complète.',
@@ -135,7 +139,8 @@ const T = {
       ['裂隙罗盘', '指向你的归途传送门或裂隙。'],
     ],
     serverEyebrow: '一起游玩', serverTitle: '加入官方服务器',
-    serverText: '在整合包中，它列在多人游戏界面的社区分类下。你也可以手动添加：',
+    serverText: '整合包会在你第一次启动游戏时把它加入服务器列表。你也可以手动添加：',
+    hosting: '官方服务器由 DatHost 托管。想要自己的服务器？可以通过我们的推广链接开设。', hostingAlt: 'DatHost 官方推广：在 DatHost 上开设你的服务器',
     copy: '复制', copied: '已复制',
     links: ['CurseForge 上的模组', 'CurseForge 上的整合包', '报告 bug'],
     about: '模组提供 OneBlock、岛屿边界、传送门和逃脱机制。整合包加入其他模组、任务书和整合包设置，带来完整的生存体验。',
@@ -247,6 +252,13 @@ const itemImages = [iGateway, iReturn, iFracture, iFragment, iCompass];
       <a class="dc-btn dc-btn--ghost" href={BUG}>{T.links[2]}</a>
     </div>
   </section>
+
+  <aside class="dc-affiliate">
+    <p>{T.hosting}</p>
+    <a href={DATHOST} rel="sponsored noopener" target="_blank">
+      <Image src={dathost} alt={T.hostingAlt} widths={[640, 1000, 2000]} sizes="(max-width: 900px) 100vw, 900px" />
+    </a>
+  </aside>
 
   <p class="dc-about">{T.about}</p>
   <p class="dc-note">{T.note}</p>
