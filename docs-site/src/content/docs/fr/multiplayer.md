@@ -10,6 +10,10 @@ Utilise la même version du pack que le serveur. Les équipes passent par Slate 
 
 Envie de jouer avec d’autres ? Rejoins le serveur officiel sur **play-dc.shyzos.xyz**. Le modpack l’ajoute à ta liste de serveurs au premier lancement du jeu : il apparaît donc sur l’écran multijoueur. Si tu le supprimes ou le renommes, il ne revient pas.
 
+Le serveur officiel est hébergé par DatHost. Tu veux ton propre serveur ? Passe par notre lien d’affiliation :
+
+[![Affilié officiel DatHost](../../../assets/media/dathost-affiliate.webp)](https://dathost.com/r/Shyzuu?c=b2366c6f)
+
 ## Créer une équipe
 
 Ouvre le menu des équipes de Slate Teams (**K** par défaut) et choisis **Créer une équipe**. Donne-lui un nom, puis clique sur **Fonder l’équipe**. Tu gardes ton île et tes objets, et ton île devient celle de l’équipe. Tes quêtes terminées et tes récompenses récupérées passent dans l’équipe, donc l’île garde son palier. Ça marche que tu sois opérateur ou non.
