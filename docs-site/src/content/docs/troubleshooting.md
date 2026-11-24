@@ -11,6 +11,8 @@ Check Minecraft 1.21.1, NeoForge, Java 21 and the required mods. For the modpack
 
 Make sure you're on your own or your team's island, in Survival, with a suitable tool in hand. If drops seem to go missing, check the six-slot reserve. If the block stays stuck, keep the error message and report it. Don't delete the island's save files to force a reset.
 
+If the OneBlock is gone or stops responding, it comes back by itself when your island loads. Your blocks mined are kept.
+
 ## Quests or expansion are missing
 
 These need Slate Quests and the modpack's quest book. Mining more won't expand the border on its own, but reaching a tier can start a OneBlock phase early. If you've edited the quest book yourself, the mod keeps your version instead of overwriting it. Back it up before asking for help.
@@ -18,6 +20,10 @@ These need Slate Quests and the modpack's quest book. Mining more won't expand t
 ## The gateway didn't go where I expected
 
 Check your island tier and `/dc status`. A dimension has to be installed and unlocked before the gateway can use it, and the gateway never picks the same one twice in a row when another is available. If your chapter needs a dimension, it goes there first, at most every other day.
+
+## My keys changed
+
+The pack's key layout works with TACZ guns: **R** reloads, Better Inventory's tool wheel is on **numpad 6**, sorting is on the **middle mouse button** and Xaero's enlarged map is on **numpad 7**. It's applied once, and only to keys you never changed yourself. You can change them back in **Options > Controls**.
 
 ## Still stuck?
 

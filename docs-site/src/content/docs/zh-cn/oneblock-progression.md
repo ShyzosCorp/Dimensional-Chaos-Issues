@@ -1,6 +1,6 @@
 ---
 title: "OneBlock 进度"
-description: "Dimensional Chaos 1.1.2 中 OneBlock 的七个阶段：已挖掘方块数、岛屿等级、工具和六格储备。"
+description: "Dimensional Chaos 1.1.5 中 OneBlock 的七个阶段：已挖掘方块数、岛屿等级、工具和六格储备。"
 tableOfContents: false
 ---
 
@@ -23,5 +23,7 @@ OneBlock 给出的东西会随着你的进度而变化，一共有七个阶段�
 必须由你亲自在生存模式下，用能采集当前方块的工具来挖。机器和假玩家不会推进进度。
 
 如果背包满了，掉落物会进入岛屿的六格储备（单方块储备）。空手潜行并右键点击 OneBlock 即可打开，也可以使用 `/dc oneblock cache`。储备由整个队伍共享。背包和储备都满了的话，掉落物会掉在地上，所以记得时常清空。
+
+带拾取升级的 Better Inventory 背包会优先收集 OneBlock 掉落物，就像收集地上的物品一样。
 
 这些阶段与八个[岛屿扩张等级](../island-expansion/)相互独立，不过提升等级可以提前开启某个阶段。

@@ -9,7 +9,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Dimensional Chaos',
-      description: 'Player guides for the Dimensional Chaos mod and OneBlock modpack, up to date for 1.1.2 Beta.',
+      description: 'Player guides for the Dimensional Chaos mod and OneBlock modpack, up to date for 1.1.5 Beta.',
       defaultLocale: 'root',
       locales: {
         root: { label: 'English', lang: 'en' },

@@ -17,9 +17,11 @@ The timer only counts while you're playing. The HUD and your Rift Compass show w
 
 Nightfall closes the home gateway, but players already out on an expedition aren't trapped by it: they still have their own time to get back.
 
+During an expedition, teleport commands such as `/spawn`, `/home`, `/sethome`, `/back`, `/tpa` and `/warp` are blocked until you come home through your return portal.
+
 ## Where the gateway goes
 
-Each island gets one destination per day, and never the same one twice in a row when another is available. Dimensions you unlocked recently come up more often; the early ones still come back now and then.
+Each island gets one destination per day, and never the same one twice in a row when another is available. The dawn message and `/dc rotate` name the dimension your own island's gateway opens to. Dimensions you unlocked recently come up more often; the early ones still come back now and then.
 
 When your current expansion chapter needs a dimension you haven't visited yet, the gateway takes you there first, at most every other day. `/dc status` lists the dimensions you still have to visit. See [Island expansion](../island-expansion/) for which dimension opens at which tier.
 
@@ -31,7 +33,7 @@ Your return portal closes and you're trapped. The only way home is through the D
 - The repair needs 4 fragments at tiers 0 to 2, 5 at tiers 3 to 5 and 6 from tier 6. Right-click the fracture with your fragments, then step in.
 - Guardians get stronger, better armed and more numerous as your island grows: 3 at tier 0, up to 6 at tier 8.
 - If fragments get lost (lava, the void), a safety guardian brings 2 more once, after 3 minutes.
-- Ordinary monsters don't drop fragments.
+- Ordinary monsters don't drop fragments. You can also craft them from quartz, amethyst and glowstone.
 
 While you're trapped, teleport commands, other portals and dying won't take you home. Falling out of the Aether doesn't count either. Once used, the fracture closes into crying obsidian.
 

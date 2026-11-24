@@ -8,11 +8,11 @@ Utilise la même version du pack que le serveur. Les équipes passent par Slate 
 
 ## Serveur officiel
 
-Envie de jouer avec d’autres ? Rejoins le serveur officiel sur **play-dc.shyzos.xyz**. Dans le modpack, il apparaît dans **Communauté** sur l’écran multijoueur.
+Envie de jouer avec d’autres ? Rejoins le serveur officiel sur **play-dc.shyzos.xyz**. Le modpack l’ajoute à ta liste de serveurs au premier lancement du jeu : il apparaît donc sur l’écran multijoueur. Si tu le supprimes ou le renommes, il ne revient pas.
 
 ## Créer une équipe
 
-Ouvre le menu des équipes de Slate Teams (**K** par défaut) et choisis **Créer une équipe**. Donne-lui un nom, puis clique sur **Fonder l’équipe**. Tu gardes ton île et tes objets, et ton île devient celle de l’équipe. Ça marche que tu sois opérateur ou non.
+Ouvre le menu des équipes de Slate Teams (**K** par défaut) et choisis **Créer une équipe**. Donne-lui un nom, puis clique sur **Fonder l’équipe**. Tu gardes ton île et tes objets, et ton île devient celle de l’équipe. Tes quêtes terminées et tes récompenses récupérées passent dans l’équipe, donc l’île garde son palier. Ça marche que tu sois opérateur ou non.
 
 `/dc team create <nom>` fait la même chose depuis le chat, et `/dc team info` affiche ton équipe et ton île.
 
@@ -29,6 +29,8 @@ Les joueurs peuvent aussi demander à rejoindre depuis la liste des équipes. Un
 ## Ce que l’équipe partage
 
 Les membres de l’équipe partagent l’île, le OneBlock et sa réserve de six emplacements, ainsi que le palier de l’île. La progression et les récompenses des quêtes suivent les réglages de quêtes Slate du pack. Chaque joueur a son propre compte à rebours d’expédition.
+
+`/spawn` te ramène sur ton île, que tu joues seul ou en équipe, et c’est là que tu réapparais.
 
 ## Partir, exclure ou céder l’équipe
 

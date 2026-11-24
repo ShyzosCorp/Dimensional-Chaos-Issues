@@ -1,6 +1,6 @@
 ---
 title: "OneBlock progression"
-description: "The seven OneBlock phases in Dimensional Chaos 1.1.2: blocks mined, island tiers, tools and the six-slot reserve."
+description: "The seven OneBlock phases in Dimensional Chaos 1.1.5: blocks mined, island tiers, tools and the six-slot reserve."
 tableOfContents: false
 ---
 
@@ -23,5 +23,7 @@ Use `/dc oneblock info` to see where you are. A team shares one OneBlock and one
 Mine it yourself, in Survival, with a tool that can harvest the current block. Machines and fake players don't advance it.
 
 If your inventory is full, drops go into the island's six-slot reserve. Sneak and right-click the OneBlock with an empty hand to open it, or use `/dc oneblock cache`. Your team shares it. When both are full, drops fall on the ground, so empty it now and then.
+
+A Better Inventory backpack with a pickup upgrade collects OneBlock drops first, like items picked up from the ground.
 
 The phases are separate from the eight [island expansion tiers](../island-expansion/), even though tiers can start a phase early.

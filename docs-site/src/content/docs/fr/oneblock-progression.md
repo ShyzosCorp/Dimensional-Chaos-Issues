@@ -1,6 +1,6 @@
 ---
 title: "Progression du OneBlock"
-description: "Les sept phases du OneBlock dans Dimensional Chaos 1.1.2 : blocs minés, paliers d’île, outils et réserve de six emplacements."
+description: "Les sept phases du OneBlock dans Dimensional Chaos 1.1.5 : blocs minés, paliers d’île, outils et réserve de six emplacements."
 tableOfContents: false
 ---
 
@@ -23,5 +23,7 @@ Tape `/dc oneblock info` pour voir où tu en es. Une équipe partage un seul One
 Mine-le toi-même, en Survie, avec un outil capable de récolter le bloc actuel. Les machines et les faux joueurs ne le font pas avancer.
 
 Si ton inventaire est plein, le butin part dans la réserve de six emplacements de l’île. Accroupis-toi et fais un clic droit sur le OneBlock à main vide pour l’ouvrir, ou utilise `/dc oneblock cache`. Ton équipe la partage. Quand les deux sont pleins, le butin tombe par terre, alors pense à la vider de temps en temps.
+
+Un sac à dos Better Inventory avec une amélioration de ramassage récupère d’abord le butin du OneBlock, comme les objets ramassés au sol.
 
 Les phases sont indépendantes des huit [paliers d’agrandissement de l’île](../island-expansion/), même si un palier peut lancer une phase plus tôt.
